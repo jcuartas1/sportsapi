@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/social_title"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/SocialMedia"/>
+
+    <item android:id="@+id/social_facebook"
+        android:title="@string/SocialFacebook"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_share_black_24dp" />
+
+    <item android:id="@+id/social_Instagram"
+        android:title="@string/SocialInstagram"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_share_black_24dp" />
+
+    <item android:id="@+id/social_twitter"
+        android:title="@string/SocialTwitter"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_share_black_24dp" />
+
+    <item android:id="@+id/social_url"
+        android:title="@string/SocialUrl"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_share_black_24dp" />
+
+</menu>

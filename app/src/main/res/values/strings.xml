@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Soccer App</string>
+
+    <string name="connection">Connection Problem !!</string>
+
+    <string name="teamName">Soccer Team</string>
+
+    <string name="teamDescription">Team Description</string>
+
+    <string name="teamFoundation">Foundation year:</string>
+
+    <string name="teamFoundationYear">1899</string>
+
+    <string name="teamEvents">The Next five events are:</string>
+
+    <string name="teamListTitle">FC Barcelona</string>
+
+    <string name="teamListStadium">Santiago Bernabeu</string>
+
+    <string name="teamListError">Error Message</string>
+
+    <string name="spanishLeague">Spanish La Liga</string>
+
+    <string name="germanLeague">German Bundesliga</string>
+
+    <string name="italyLeague">Italian Serie A</string>
+
+    <string name="mainToolbarTitle">SOCCER LEAGUES</string>
+
+    <string name="menuLeagueItalia">Italy</string>
+
+    <string name="menuLeagueGermany">Germany</string>
+
+    <string name="selectedLeague">Select League</string>
+
+    <string name="SocialMedia">Social Links</string>
+
+    <string name="SocialFacebook">Facebook</string>
+
+    <string name="SocialInstagram">Instagram</string>
+
+    <string name="SocialTwitter">Twitter</string>
+
+    <string name="SocialUrl">Web Site</string>
+
+    <string name="soccer_leagues">SOCCER LEAGUES!</string>
+
+    <string name="soccer_continue">LEST GOOOOL!!!</string>
+
+
+</resources>
