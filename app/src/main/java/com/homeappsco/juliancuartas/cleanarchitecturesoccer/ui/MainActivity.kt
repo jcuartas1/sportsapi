@@ -82,7 +82,12 @@ class MainActivity : AppCompatActivity() {
             R.id.italy_league -> {
                 viewModel.changeTeam(getString(R.string.italyLeague))
             }
+
+            R.id.spain_league -> {
+                viewModel.changeTeam(getString(R.string.spanishLeague))
+            }
         }
+
         return super.onOptionsItemSelected(item)
     }
 
