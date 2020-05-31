@@ -54,6 +54,12 @@ class TeamDetailsRepository
 
 }
 ```
+Screenshots
+
+![home_screen](https://user-images.githubusercontent.com/28877279/83355683-aaed8900-a326-11ea-9857-3312d736bc20.jpg)
+
+
+
 ## Deployment
 This project was built under the MVVM presentation pattern and using clean architecture parameters, such as presentation layers, repositories, etc.
 
