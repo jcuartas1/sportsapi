@@ -58,6 +58,8 @@ Screenshots
 
 ![home_screen](https://user-images.githubusercontent.com/28877279/83355683-aaed8900-a326-11ea-9857-3312d736bc20.jpg)
 
+![detail_team](https://user-images.githubusercontent.com/28877279/83355814-5d255080-a327-11ea-8d26-2a5950d85223.jpg)
+
 
 
 ## Deployment
@@ -69,3 +71,9 @@ this is the start version and we will continue to improve the use of patterns an
 ## Authors
 
 * **Julian Andres Cuartas** - *Initial work* - [HomeWork](https://github.com/jcuartas1)
+
+## Acknowledgments
+
+* api taken from: https://www.thesportsdb.com/api.php
+* ideas from: https://co.pinterest.com/julianandrescuartas/app_desing/
+* inspiration: to my wife who always trusts in my abilities, to my mother who taught me to be a good person and to my daughters who are my greatest treasure.
