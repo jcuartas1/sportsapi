@@ -1,5 +1,6 @@
 package com.homeappsco.juliancuartas.cleanarchitecturesoccer.data.api
 
+import com.homeappsco.juliancuartas.cleanarchitecturesoccer.data.models.EventsLast
 import com.homeappsco.juliancuartas.cleanarchitecturesoccer.data.models.LookUpTeamResponse
 import com.homeappsco.juliancuartas.cleanarchitecturesoccer.data.models.SearchAllTeamsResponse
 import io.reactivex.Single
@@ -11,6 +12,7 @@ interface TeamApiService {
     //https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=Spanish La Liga
     //https://www.thesportsdb.com/api/v1/json/1/eventsnext.php?id=133739
     //https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=133739
+    //https://www.thesportsdb.com/api/v1/json/1/eventslast.php?id=133602
 
     @GET("lookupteam.php")
     fun getTeamDetails(@Query("id") id: Int):Single<LookUpTeamResponse> // (Single) This returns a single observable
@@ -18,5 +20,7 @@ interface TeamApiService {
     @GET("search_all_teams.php")
     fun getTeamsByLeague(@Query("l") id: String):Single<SearchAllTeamsResponse>
 
+    @GET("eventslast.php")
+    fun getLastFiveEvents(@Query("id") id: Int):Single<EventsLast>
 
 }

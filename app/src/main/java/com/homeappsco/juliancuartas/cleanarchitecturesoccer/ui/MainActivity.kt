@@ -1,5 +1,6 @@
 package com.homeappsco.juliancuartas.cleanarchitecturesoccer.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -14,8 +15,9 @@ import com.homeappsco.juliancuartas.cleanarchitecturesoccer.R
 import com.homeappsco.juliancuartas.cleanarchitecturesoccer.data.api.TheTeamDBClient
 import com.homeappsco.juliancuartas.cleanarchitecturesoccer.data.api.TeamApiService
 import com.homeappsco.juliancuartas.cleanarchitecturesoccer.data.repository.NetworkState
+import com.homeappsco.juliancuartas.cleanarchitecturesoccer.data.repository.TeamListRepository
+import com.homeappsco.juliancuartas.cleanarchitecturesoccer.ui.single_team_details.SingleTeam
 import com.homeappsco.juliancuartas.cleanarchitecturesoccer.ui.team_list.ListTeamLeagueAdapter
-import com.homeappsco.juliancuartas.cleanarchitecturesoccer.ui.team_list.TeamListRepository
 import com.homeappsco.juliancuartas.cleanarchitecturesoccer.ui.team_list.TeamListViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,8 +26,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewModel : TeamListViewModel
 
     lateinit var teamListRepository: TeamListRepository
-
-    //var toolbar : Toolbar? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,10 +41,9 @@ class MainActivity : AppCompatActivity() {
 
         val gridLayout = GridLayoutManager(this,3)
 
-        viewModel.SearchAllTeamsResponse.observe(this, Observer {
+        viewModel.teamList.observe(this, Observer {
 
-
-            val adapterList = ListTeamLeagueAdapter(it)
+            val adapterList = ListTeamLeagueAdapter(it, ::showTeamDetails)
 
             gridLayout.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup(){
                 override fun getSpanSize(position: Int): Int {
@@ -85,6 +84,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun showTeamDetails(idTeam: Int, nameTeam: String){
+
+        val intent = Intent(this, SingleTeam::class.java)
+
+        intent.putExtra("id", idTeam)
+        intent.putExtra("name", nameTeam)
+        startActivity(intent)
+
     }
 
     private fun getViewModel() : TeamListViewModel {

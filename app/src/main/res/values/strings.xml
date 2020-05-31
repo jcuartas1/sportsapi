@@ -11,7 +11,7 @@
 
     <string name="teamFoundationYear">1899</string>
 
-    <string name="teamEvents">The Next five events are:</string>
+    <string name="teamEvents">The Last five events:</string>
 
     <string name="teamListTitle">FC Barcelona</string>
 
@@ -46,6 +46,19 @@
     <string name="soccer_leagues">SOCCER LEAGUES!</string>
 
     <string name="soccer_continue">LEST GOOOOL!!!</string>
+
+    <string name="event_title">UEFA Champions League</string>
+
+    <string name="event_description">Liverpool vs Ath Madrid</string>
+
+    <string name="event_teamA">Team A</string>
+
+    <string name="event_teamB">Team B</string>
+
+    <string name="result_teamA">2</string>
+
+    <string name="result_teamB">0</string>
+
 
 
 </resources>
